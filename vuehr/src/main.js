@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
-import store from './store'
+import router from './router.js'
+import store from './store/index.js'
 import {
     Button,
     Input,
@@ -100,12 +100,12 @@ Vue.use(Tag);
 Vue.prototype.$alert = MessageBox.alert
 Vue.prototype.$confirm = MessageBox.confirm
 
-import {postRequest} from "./utils/api";
-import {postKeyValueRequest} from "./utils/api";
-import {putRequest} from "./utils/api";
-import {deleteRequest} from "./utils/api";
-import {getRequest} from "./utils/api";
-import {initMenu} from "./utils/menus";
+import {postRequest} from "./utils/api.js";
+import {postKeyValueRequest} from "./utils/api.js";
+import {putRequest} from "./utils/api.js";
+import {deleteRequest} from "./utils/api.js";
+import {getRequest} from "./utils/api.js";
+import {initMenu} from "./utils/menus.js";
 import 'font-awesome/css/font-awesome.min.css'
 
 Vue.prototype.postRequest = postRequest;
